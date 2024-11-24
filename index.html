@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Document</title>
+</head>
+<body>
+
+  <header class="header">
+    <div class="container">
+      <div class="header__top">
+        <nav class="header__nav hide  nav">
+          <span class="nav__close">close</span>
+          <ul class="nav__items">
+            <li class="nav__item">
+              <a href="" class="nav__link">Home</a>
+            </li>
+            <li class="nav__item">
+              <a href="" class="nav__link">Pages</a>
+            </li>
+            <li class="nav__item">
+              <a href="" class="nav__link">Menu</a>
+            </li>
+            <li class="nav__item">
+              <a href="" class="nav__link">Order</a>
+            </li>
+            <li class="nav__item">
+              <a href="" class="nav__link">Blog</a>
+            </li>
+            <li class="nav__item">
+              <a href="" class="nav__link">Contact</a>
+            </li>
+            <li class="nav__item">
+              <a href="" class="nav__link">Shop</a>
+            </li>
+          </ul>
+        </nav>
+        <a href="/" class="btn">Reservation</a>
+        <button class='header__open'>open</button>
+      </div>
+    </div>
+  </header>
+
+
+  <script defer src='./js/app.js'></script>
+  <script>
+    const mainNavigation = document.querySelector('.header__nav');
+    document.querySelector('.nav__close').addEventListener('click', function () {
+      mainNavigation.classList.add('hide');
+    })
+    document.querySelector('.header__open').addEventListener('click', function () {
+      mainNavigation.classList.remove('hide');
+    })
+  </script>
+</body>
+</html>
